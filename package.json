@@ -1,5 +1,5 @@
 {
-  "name": "cachetapi",
+  "name": "@ostlerdev/cachetapi",
   "version": "1.0.0",
   "description": "An easy to use NPM Module to interact with Cachet",
   "main": "lib/index.js",
