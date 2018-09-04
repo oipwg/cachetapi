@@ -1,0 +1,7555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      CachetAPI - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  <link type="text/css" rel="stylesheet" href="styles/monokai-sublime.css">
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      OIP HDMW
+    </h3>
+
+    <h3>Classes</h3><ul><li id="CachetAPI-nav"><a href="CachetAPI.html">CachetAPI</a><ul class='methods'><li data-type="method" id="CachetAPI-addComponent-nav"><a href="CachetAPI.html#addComponent">addComponent</a></li><li data-type="method" id="CachetAPI-addComponentGroup-nav"><a href="CachetAPI.html#addComponentGroup">addComponentGroup</a></li><li data-type="method" id="CachetAPI-addIncident-nav"><a href="CachetAPI.html#addIncident">addIncident</a></li><li data-type="method" id="CachetAPI-addIncidentUpdate-nav"><a href="CachetAPI.html#addIncidentUpdate">addIncidentUpdate</a></li><li data-type="method" id="CachetAPI-addMetric-nav"><a href="CachetAPI.html#addMetric">addMetric</a></li><li data-type="method" id="CachetAPI-addMetricPoint-nav"><a href="CachetAPI.html#addMetricPoint">addMetricPoint</a></li><li data-type="method" id="CachetAPI-addSubscriber-nav"><a href="CachetAPI.html#addSubscriber">addSubscriber</a></li><li data-type="method" id="CachetAPI-deleteComponent-nav"><a href="CachetAPI.html#deleteComponent">deleteComponent</a></li><li data-type="method" id="CachetAPI-deleteComponentGroup-nav"><a href="CachetAPI.html#deleteComponentGroup">deleteComponentGroup</a></li><li data-type="method" id="CachetAPI-deleteIncident-nav"><a href="CachetAPI.html#deleteIncident">deleteIncident</a></li><li data-type="method" id="CachetAPI-deleteIncidentUpdate-nav"><a href="CachetAPI.html#deleteIncidentUpdate">deleteIncidentUpdate</a></li><li data-type="method" id="CachetAPI-deleteMetric-nav"><a href="CachetAPI.html#deleteMetric">deleteMetric</a></li><li data-type="method" id="CachetAPI-deleteMetricPoint-nav"><a href="CachetAPI.html#deleteMetricPoint">deleteMetricPoint</a></li><li data-type="method" id="CachetAPI-deleteSubscriber-nav"><a href="CachetAPI.html#deleteSubscriber">deleteSubscriber</a></li><li data-type="method" id="CachetAPI-getComponent-nav"><a href="CachetAPI.html#getComponent">getComponent</a></li><li data-type="method" id="CachetAPI-getComponentGroup-nav"><a href="CachetAPI.html#getComponentGroup">getComponentGroup</a></li><li data-type="method" id="CachetAPI-getComponentGroups-nav"><a href="CachetAPI.html#getComponentGroups">getComponentGroups</a></li><li data-type="method" id="CachetAPI-getComponents-nav"><a href="CachetAPI.html#getComponents">getComponents</a></li><li data-type="method" id="CachetAPI-getIncident-nav"><a href="CachetAPI.html#getIncident">getIncident</a></li><li data-type="method" id="CachetAPI-getIncidents-nav"><a href="CachetAPI.html#getIncidents">getIncidents</a></li><li data-type="method" id="CachetAPI-getIncidentUpdate-nav"><a href="CachetAPI.html#getIncidentUpdate">getIncidentUpdate</a></li><li data-type="method" id="CachetAPI-getIncidentUpdates-nav"><a href="CachetAPI.html#getIncidentUpdates">getIncidentUpdates</a></li><li data-type="method" id="CachetAPI-getMetric-nav"><a href="CachetAPI.html#getMetric">getMetric</a></li><li data-type="method" id="CachetAPI-getMetricPoints-nav"><a href="CachetAPI.html#getMetricPoints">getMetricPoints</a></li><li data-type="method" id="CachetAPI-getMetrics-nav"><a href="CachetAPI.html#getMetrics">getMetrics</a></li><li data-type="method" id="CachetAPI-getSubscribers-nav"><a href="CachetAPI.html#getSubscribers">getSubscribers</a></li><li data-type="method" id="CachetAPI-getVersion-nav"><a href="CachetAPI.html#getVersion">getVersion</a></li><li data-type="method" id="CachetAPI-ping-nav"><a href="CachetAPI.html#ping">ping</a></li><li data-type="method" id="CachetAPI-updateComponent-nav"><a href="CachetAPI.html#updateComponent">updateComponent</a></li><li data-type="method" id="CachetAPI-updateComponentGroup-nav"><a href="CachetAPI.html#updateComponentGroup">updateComponentGroup</a></li><li data-type="method" id="CachetAPI-updateIncident-nav"><a href="CachetAPI.html#updateIncident">updateIncident</a></li><li data-type="method" id="CachetAPI-updateIncidentUpdate-nav"><a href="CachetAPI.html#updateIncidentUpdate">updateIncidentUpdate</a></li></ul></li></ul><h3 id="global-nav"><a href="global.html">Global</a></h3>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        CachetAPI
+      </h1>
+    
+
+    
+
+<section>
+  <header>
+    
+      <h2>
+        
+        CachetAPI
+        
+      </h2>
+
+      
+    
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#CachetAPI">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="CachetAPI">
+      <span class="type-signature"></span>new CachetAPI<span class="signature">(options)</span><span class="type-signature"> &rarr; {<a href="CachetAPI.html">CachetAPI</a>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Create a new CachetAPI</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>options</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Object
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Options about the CachetAPI Instance</p>
+          
+            <h6>Properties</h6>
+            
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>url</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          <p>The URL of the CachetAPI Instance</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>apiToken</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          <p>The API Token for the CachetAPI Instance</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line19">line 19</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#CachetAPI-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="CachetAPI-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>import CachetAPI from 'cachetapi'
+
+let cachet_api = new CachetAPI({
+	url: "https://demo.cachethq.io/api",
+	apiToken: "9yMHsdioQosnyVK4iCVR"
+})</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      <a href="CachetAPI.html">CachetAPI</a>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addComponent">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addComponent">
+      <span class="type-signature">(async) </span>addComponent<span class="signature">(component)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Component">Component</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add a new Component</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>component</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#Component">Component</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The Component you wish to add</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line185">line 185</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addComponent-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addComponent-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let component = await cachet_api.addComponent({
+	name: "My Component",
+	description: "My Description",
+	status: 0
+})
+// component = <a href="global.html#Component">Component</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.addComponent({
+	name: "My Component",
+	description: "My Description",
+	status: 0
+}).then((component) => {
+	// component = <a href="global.html#Component">Component</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a component</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Component">Component</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addComponentGroup">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addComponentGroup">
+      <span class="type-signature">(async) </span>addComponentGroup<span class="signature">(group)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#ComponentGroup">ComponentGroup</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add a new Component Group</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>group</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#ComponentGroup">ComponentGroup</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The Component Group you wish to add</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line349">line 349</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addComponentGroup-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addComponentGroup-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let component_group = await cachet_api.addComponentGroup({
+	name: "My Component Group"
+})
+// component_group = <a href="global.html#ComponentGroup">ComponentGroup</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.addComponentGroup({
+	name: "My Component Group"
+}).then((component_group) => {
+	// component_group = <a href="global.html#ComponentGroup">ComponentGroup</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a Component Group</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#ComponentGroup">ComponentGroup</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addIncident">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addIncident">
+      <span class="type-signature">(async) </span>addIncident<span class="signature">(incident)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Incident">Incident</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add a new Incident</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#Incident">Incident</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The Incident you wish to add</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line524">line 524</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addIncident-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addIncident-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let incident = await cachet_api.addIncident({
+	name: "My Incident",
+	message: "My Incident message",
+	status: 0,
+	visible: 1
+})
+// incident = <a href="global.html#Incident">Incident</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.addIncident({
+	name: "My Incident",
+	message: "My Incident message",
+	status: 0,
+	visible: 1
+}).then((incident) => {
+	// incident = <a href="global.html#Incident">Incident</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Incident</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Incident">Incident</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addIncidentUpdate">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addIncidentUpdate">
+      <span class="type-signature">(async) </span>addIncidentUpdate<span class="signature">(incident_id, update)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#IncidentUpdate">IncidentUpdate</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add a new Incident Update</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident you wish to add an Incident Updates to</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>update</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#IncidentUpdate">IncidentUpdate</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The Incident Update you wish to add</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line692">line 692</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addIncidentUpdate-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addIncidentUpdate-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let incident_update = await cachet_api.addIncidentUpdate(0, {
+	message: "My Update",
+	status: 2
+})
+// incident_update = <a href="global.html#IncidentUpdate">IncidentUpdate</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.addIncidentUpdate(0, {
+	message: "My Update",
+	status: 2
+}).then((incident_update) => {
+	// incident_update = <a href="global.html#IncidentUpdate">IncidentUpdate</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an IncidentUpdate</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#IncidentUpdate">IncidentUpdate</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addMetric">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addMetric">
+      <span class="type-signature">(async) </span>addMetric<span class="signature">(metric)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Metric">Metric</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add a new Metric</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>metric</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#Metric">Metric</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The Metric you wish to add</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line866">line 866</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addMetric-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addMetric-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let metric = await cachet_api.addMetric({
+	name: "My Metric",
+	suffix: "F",
+	description: "My Metric Description",
+	default_value: 1
+})
+// metric = <a href="global.html#Metric">Metric</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.addMetric({
+	name: "My Metric",
+	suffix: "F",
+	description: "My Metric Description",
+	default_value: 1
+}).then((metric) => {
+	// metric = <a href="global.html#Metric">Metric</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a Metric</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Metric">Metric</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addMetricPoint">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addMetricPoint">
+      <span class="type-signature">(async) </span>addMetricPoint<span class="signature">(metric_id, point)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#MetricPoint">MetricPoint</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add a new Component</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>metric_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Metric you wish to add a Metric Point to</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>point</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#MetricPoint">MetricPoint</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The Metric Point you wish to add</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line961">line 961</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addMetricPoint-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addMetricPoint-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let metric_point = await cachet_api.addMetricPoint({
+	value: 0.75
+})
+// metric_point = <a href="global.html#MetricPoint">MetricPoint</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.addMetricPoint({
+	value: 0.75
+}).then((metric_point) => {
+	// metric_point = <a href="global.html#MetricPoint">MetricPoint</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a MetricPoint</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#MetricPoint">MetricPoint</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addSubscriber">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addSubscriber">
+      <span class="type-signature">(async) </span>addSubscriber<span class="signature">(subscriber)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Subscriber">Subscriber</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add a new Subscriber</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>subscriber</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#Subscriber">Subscriber</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The Subscriber you wish to add</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line1058">line 1058</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addSubscriber-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addSubscriber-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let subscriber = await cachet_api.addSubscriber({
+	email: "email@example.com"
+})
+// subscriber = <a href="global.html#Subscriber">Subscriber</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.addSubscriber({
+	email: "email@example.com"
+}).then((subscriber) => {
+	// subscriber = <a href="global.html#Subscriber">Subscriber</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a Subscriber</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Subscriber">Subscriber</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#deleteComponent">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="deleteComponent">
+      <span class="type-signature">(async) </span>deleteComponent<span class="signature">(component_id)</span><span class="type-signature"> &rarr; {Promise.&lt;Boolean>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Delete a Component</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>component_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Component you wish to delete</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line248">line 248</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#deleteComponent-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="deleteComponent-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let success = await cachet_api.deleteComponent(0)
+// success = true</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.deleteComponent(0).then((success) => {
+	// success = true
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns <code>true</code> if component deletion was successful</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Boolean>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#deleteComponentGroup">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="deleteComponentGroup">
+      <span class="type-signature">(async) </span>deleteComponentGroup<span class="signature">(group_id)</span><span class="type-signature"> &rarr; {Promise.&lt;Boolean>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Delete a ComponentGroup</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>group_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Component Group you wish to delete</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line410">line 410</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#deleteComponentGroup-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="deleteComponentGroup-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let success = await cachet_api.deleteComponentGroup(0)
+// success = true</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.deleteComponentGroup(0).then((success) => {
+	// success = true
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns <code>true</code> if Component Group deletion was successful</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Boolean>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#deleteIncident">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="deleteIncident">
+      <span class="type-signature">(async) </span>deleteIncident<span class="signature">(incident_id)</span><span class="type-signature"> &rarr; {Promise.&lt;Boolean>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Delete an Incident</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident you wish to delete</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line587">line 587</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#deleteIncident-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="deleteIncident-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let success = await cachet_api.deleteIncident(0)
+// success = true</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.deleteIncident(0).then((success) => {
+	// success = true
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns <code>true</code> if the Incident deletion was successful</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Boolean>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#deleteIncidentUpdate">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="deleteIncidentUpdate">
+      <span class="type-signature">(async) </span>deleteIncidentUpdate<span class="signature">(incident_id, update_id)</span><span class="type-signature"> &rarr; {Promise.&lt;Boolean>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Delete an Incident Update</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident that you wish to delete an Incident Updates from</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>update_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident Update you wish to delete</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line757">line 757</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#deleteIncidentUpdate-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="deleteIncidentUpdate-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let success = await cachet_api.deleteIncidentUpdate(0, 0)
+// success = true</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.deleteIncidentUpdate(0, 0).then((success) => {
+	// success = true
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns <code>true</code> if Incident Update deletion was successful</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Boolean>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#deleteMetric">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="deleteMetric">
+      <span class="type-signature">(async) </span>deleteMetric<span class="signature">(metric_id)</span><span class="type-signature"> &rarr; {Promise.&lt;Boolean>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Delete a Metric</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>metric_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Metric you wish to delete</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line894">line 894</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#deleteMetric-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="deleteMetric-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let success = await cachet_api.deleteMetric(0)
+// success = true</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.deleteMetric(0).then((success) => {
+	// success = true
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns <code>true</code> if Metric deletion was successful</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Boolean>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#deleteMetricPoint">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="deleteMetricPoint">
+      <span class="type-signature">(async) </span>deleteMetricPoint<span class="signature">(metric_id, point_id)</span><span class="type-signature"> &rarr; {Promise.&lt;Boolean>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Delete a Metric Point</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>metric_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Metric you wish to delete a Metric Point from</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>point_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Metric Point you wish to delete</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line990">line 990</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#deleteMetricPoint-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="deleteMetricPoint-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let success = await cachet_api.deleteMetricPoint(0, 0)
+// success = true</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.deleteMetricPoint(0, 0).then((success) => {
+	// success = true
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns <code>true</code> if Metric Point deletion was successful</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Boolean>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#deleteSubscriber">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="deleteSubscriber">
+      <span class="type-signature">(async) </span>deleteSubscriber<span class="signature">(subscriber_id)</span><span class="type-signature"> &rarr; {Promise.&lt;Boolean>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Delete a Subscriber</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>subscriber_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Subscriber you wish to delete</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line1086">line 1086</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#deleteSubscriber-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="deleteSubscriber-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let success = await cachet_api.deleteSubscriber(0)
+// success = true</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.deleteSubscriber(0).then((success) => {
+	// success = true
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns <code>true</code> if Subscriber deletion was successful</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Boolean>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getComponent">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getComponent">
+      <span class="type-signature">(async) </span>getComponent<span class="signature">(component_id)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Component">Component</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get a Component</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>component_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Component you wish to get</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line149">line 149</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getComponent-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getComponent-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let component = await cachet_api.getComponent(0)
+// component = <a href="global.html#Component">Component</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getComponent(0).then((component) => {
+	// component = <a href="global.html#Component">Component</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a component</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Component">Component</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getComponentGroup">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getComponentGroup">
+      <span class="type-signature">(async) </span>getComponentGroup<span class="signature">(group_id)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#ComponentGroup">ComponentGroup</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get a Component Group</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>group_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Component Group you wish to get</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line317">line 317</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getComponentGroup-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getComponentGroup-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let component_group = await cachet_api.getComponentGroup(0)
+// component_group = <a href="global.html#ComponentGroup">ComponentGroup</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getComponentGroup(0).then((component_group) => {
+	// component_group = <a href="global.html#ComponentGroup">ComponentGroup</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a Component Group</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#ComponentGroup">ComponentGroup</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getComponentGroups">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getComponentGroups">
+      <span class="type-signature">(async) </span>getComponentGroups<span class="signature">(with_meta<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="global.html#ComponentGroup">ComponentGroup</a>>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get all the Component Groups</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>with_meta</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              false
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Set this to true if you would like the original response with meta info (paginated info)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line284">line 284</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getComponentGroups-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getComponentGroups-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let component_groups = await cachet_api.getComponentGroups()
+// component_groups = [<a href="global.html#ComponentGroup">ComponentGroup</a>, <a href="global.html#ComponentGroup">ComponentGroup</a>, <a href="global.html#ComponentGroup">ComponentGroup</a>]</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getComponentGroups().then((component_groups) => {
+	// component_groups = [<a href="global.html#ComponentGroup">ComponentGroup</a>, <a href="global.html#ComponentGroup">ComponentGroup</a>, <a href="global.html#ComponentGroup">ComponentGroup</a>]
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Array of Component Groups</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Array.&lt;<a href="global.html#ComponentGroup">ComponentGroup</a>>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getComponents">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getComponents">
+      <span class="type-signature">(async) </span>getComponents<span class="signature">(with_meta<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="global.html#Component">Component</a>>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get all the Components</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>with_meta</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              false
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Set this to true if you would like the original response with meta info (paginated info)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line116">line 116</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getComponents-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getComponents-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let components = await cachet_api.getComponents()
+// components = [<a href="global.html#Component">Component</a>, <a href="global.html#Component">Component</a>, <a href="global.html#Component">Component</a>]</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getComponents().then((components) => {
+	// components = [<a href="global.html#Component">Component</a>, <a href="global.html#Component">Component</a>, <a href="global.html#Component">Component</a>]
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Array of Components</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Array.&lt;<a href="global.html#Component">Component</a>>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getIncident">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getIncident">
+      <span class="type-signature">(async) </span>getIncident<span class="signature">(incident_id)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Incident">Incident</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get an Incident</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident you wish to get</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line486">line 486</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getIncident-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getIncident-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let incident = await cachet_api.getIncident(0)
+// incident = <a href="global.html#Incident">Incident</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getIncident(0).then((incident) => {
+	// incident = <a href="global.html#Incident">Incident</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Incident</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Incident">Incident</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getIncidents">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getIncidents">
+      <span class="type-signature">(async) </span>getIncidents<span class="signature">(with_meta<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="global.html#Incident">Incident</a>>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get all the Incidents</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>with_meta</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              false
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Set this to true if you would like the original response with meta info (paginated info)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line453">line 453</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getIncidents-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getIncidents-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let incident = await cachet_api.getIncidents()
+// incident = [<a href="global.html#Incident">Incident</a>, <a href="global.html#Incident">Incident</a>, <a href="global.html#Incident">Incident</a>]</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getIncidents().then((incident) => {
+	// incident = [<a href="global.html#Incident">Incident</a>, <a href="global.html#Incident">Incident</a>, <a href="global.html#Incident">Incident</a>]
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Array of Incidents</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Array.&lt;<a href="global.html#Incident">Incident</a>>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getIncidentUpdate">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getIncidentUpdate">
+      <span class="type-signature">(async) </span>getIncidentUpdate<span class="signature">(incident_id, update_id)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#IncidentUpdate">IncidentUpdate</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get an Incident Update</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident you wish to get the specific Incident Update from</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>update_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident Update you wish to get</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line657">line 657</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getIncidentUpdate-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getIncidentUpdate-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let incident_update = await cachet_api.getIncidentUpdate(0, 0)
+// incident_update = <a href="global.html#IncidentUpdate">IncidentUpdate</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getIncidentUpdate(0, 0).then((incident_update) => {
+	// incident_update = <a href="global.html#IncidentUpdate">IncidentUpdate</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Incident Update</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#IncidentUpdate">IncidentUpdate</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getIncidentUpdates">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getIncidentUpdates">
+      <span class="type-signature">(async) </span>getIncidentUpdates<span class="signature">(incident_id, with_meta<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="global.html#IncidentUpdate">IncidentUpdate</a>>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get all the IncidentUpdates for a specific Incident</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>The ID of the Incident you wish to get Incident Updates for</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>with_meta</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              false
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Set this to true if you would like the original response with meta info (paginated info)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line623">line 623</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getIncidentUpdates-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getIncidentUpdates-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let incident_updates = await cachet_api.getIncidentUpdates()
+// incident_updates = [<a href="global.html#IncidentUpdate">IncidentUpdate</a>, <a href="global.html#IncidentUpdate">IncidentUpdate</a>, <a href="global.html#IncidentUpdate">IncidentUpdate</a>]</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getIncidentUpdates().then((incident_updates) => {
+	// incident_updates = [<a href="global.html#IncidentUpdate">IncidentUpdate</a>, <a href="global.html#IncidentUpdate">IncidentUpdate</a>, <a href="global.html#IncidentUpdate">IncidentUpdate</a>]
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Array of IncidentUpdates</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Array.&lt;<a href="global.html#IncidentUpdate">IncidentUpdate</a>>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getMetric">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getMetric">
+      <span class="type-signature">(async) </span>getMetric<span class="signature">(metric_id)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Metric">Metric</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get a Metric</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>metric_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Metric you wish to get</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line828">line 828</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getMetric-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getMetric-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let metric = await cachet_api.getMetric(0)
+// metric = <a href="global.html#Metric">Metric</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getMetric(0).then((metric) => {
+	// metric = <a href="global.html#Metric">Metric</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a Metric</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Metric">Metric</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getMetricPoints">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getMetricPoints">
+      <span class="type-signature">(async) </span>getMetricPoints<span class="signature">(metric_id, with_meta<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="global.html#MetricPoint">MetricPoint</a>>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get all the Metric Points</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>metric_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>The ID of the Metric you wish to get Metric Points from</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>with_meta</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              false
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Set this to true if you would like the original response with meta info (paginated info)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line928">line 928</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getMetricPoints-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getMetricPoints-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let metric_point = await cachet_api.getMetricPoints(0)
+// metric_point = [<a href="global.html#MetricPoint">MetricPoint</a>, <a href="global.html#MetricPoint">MetricPoint</a>, <a href="global.html#MetricPoint">MetricPoint</a>]</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getMetricPoints(0).then((metric_point) => {
+	// metric_point = [<a href="global.html#MetricPoint">MetricPoint</a>, <a href="global.html#MetricPoint">MetricPoint</a>, <a href="global.html#MetricPoint">MetricPoint</a>]
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Array of Components</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Array.&lt;<a href="global.html#MetricPoint">MetricPoint</a>>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getMetrics">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getMetrics">
+      <span class="type-signature">(async) </span>getMetrics<span class="signature">(with_meta<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="global.html#Metric">Metric</a>>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get all the Metrics</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>with_meta</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              false
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Set this to true if you would like the original response with meta info (paginated info)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line795">line 795</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getMetrics-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getMetrics-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let metrics = await cachet_api.getMetrics()
+// metrics = [<a href="global.html#Metric">Metric</a>, <a href="global.html#Metric">Metric</a>, <a href="global.html#Metric">Metric</a>]</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getMetrics().then((metrics) => {
+	// metrics = [<a href="global.html#Metric">Metric</a>, <a href="global.html#Metric">Metric</a>, <a href="global.html#Metric">Metric</a>]
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Array of Metrics</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Array.&lt;<a href="global.html#Metric">Metric</a>>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getSubscribers">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getSubscribers">
+      <span class="type-signature">(async) </span>getSubscribers<span class="signature">(with_meta<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="global.html#Subscriber">Subscriber</a>>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get all the Subscribers</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>with_meta</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              false
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Set this to true if you would like the original response with meta info (paginated info)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line1026">line 1026</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getSubscribers-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getSubscribers-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let subscribers = await cachet_api.getSubscribers()
+// subscribers = [<a href="global.html#Subscriber">Subscriber</a>, <a href="global.html#Subscriber">Subscriber</a>, <a href="global.html#Subscriber">Subscriber</a>]</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getSubscribers().then((subscribers) => {
+	// subscribers = [<a href="global.html#Subscriber">Subscriber</a>, <a href="global.html#Subscriber">Subscriber</a>, <a href="global.html#Subscriber">Subscriber</a>]
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Array of Subscribers</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;Array.&lt;<a href="global.html#Subscriber">Subscriber</a>>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#getVersion">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="getVersion">
+      <span class="type-signature">(async) </span>getVersion<span class="signature">(with_meta<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String|Object}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the version of the CachetAPI server</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>with_meta</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              false
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Set this to true if you would like the original response with meta info (paginated info)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line70">line 70</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getVersion-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getVersion-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let version = await cachet_api.getVersion()
+// version = "2.4.0-dev"</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.getVersion().then((version) => {
+	// version = "2.4.0-dev"
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns the current version as a string OR an Object if <code>with_meta</code> is <code>true</code></p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      String
+    </span>
+
+    |
+
+    <span class="param-type">
+      Object
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#ping">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="ping">
+      <span class="type-signature">(async) </span>ping<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;String>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Ping the CachetAPI server and get back a response</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line43">line 43</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#ping-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="ping-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let response = await cachet_api.ping()
+// response = "Pong!"</code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.ping().then((response) => {
+	// response = "Pong!"
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Responds with &quot;Pong!&quot; when online</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;String>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#updateComponent">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="updateComponent">
+      <span class="type-signature">(async) </span>updateComponent<span class="signature">(component_id, component)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Component">Component</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Update a Component</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>component_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Component you wish to update</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>component</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#Component">Component</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The updated Component info</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line220">line 220</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#updateComponent-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="updateComponent-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let component = await cachet_api.updateComponent(0, {
+	name: "My Updated Component",
+	status: 1
+})
+// component = <a href="global.html#Component">Component</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.updateComponent(0, {
+	name: "My Updated Component",
+	status: 1
+}).then((component) => {
+	// component = <a href="global.html#Component">Component</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a component</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Component">Component</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#updateComponentGroup">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="updateComponentGroup">
+      <span class="type-signature">(async) </span>updateComponentGroup<span class="signature">(group_id, group)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#ComponentGroup">ComponentGroup</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Update a Component Group</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>group_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Component Group you wish to update</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>group</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#ComponentGroup">ComponentGroup</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The updated Component Group info</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line382">line 382</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#updateComponentGroup-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="updateComponentGroup-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let component_group = await cachet_api.updateComponentGroup(0, {
+	name: "My Updated Component Group"
+})
+// component_group = <a href="global.html#ComponentGroup">ComponentGroup</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.updateComponentGroup(0, {
+	name: "My Updated Component Group"
+}).then((component_group) => {
+	// component_group = <a href="global.html#ComponentGroup">ComponentGroup</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a component</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#ComponentGroup">ComponentGroup</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#updateIncident">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="updateIncident">
+      <span class="type-signature">(async) </span>updateIncident<span class="signature">(incident_id, incident)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#Incident">Incident</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Update an Incident</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident you wish to update</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>incident</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#Incident">Incident</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The updated Incident info</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line559">line 559</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#updateIncident-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="updateIncident-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let incident = await cachet_api.updateIncident(0, {
+	name: "My Updated Incident",
+	status: 1
+})
+// incident = <a href="global.html#Incident">Incident</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.updateIncident(0, {
+	name: "My Updated Incident",
+	status: 1
+}).then((incident) => {
+	// incident = <a href="global.html#Incident">Incident</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns an Incident</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#Incident">Incident</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#updateIncidentUpdate">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="updateIncidentUpdate">
+      <span class="type-signature">(async) </span>updateIncidentUpdate<span class="signature">(incident_id, update_id, update)</span><span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#IncidentUpdate">IncidentUpdate</a>>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Update an Incident Update</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>incident_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident that you wish to update an Incident Updates on</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>update_id</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Integer
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The ID of the Incident Update you wish to update</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>update</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="global.html#IncidentUpdate">IncidentUpdate</a>
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The updated IncidentUpdate</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="CachetAPI.js.html">CachetAPI.js</a>, <a href="CachetAPI.js.html#line728">line 728</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#updateIncidentUpdate-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="updateIncidentUpdate-examples">Examples</h5>
+    
+  <p class="code-caption">
+    Async/Await
+  </p>
+
+
+  <pre class="prettyprint"><code>let incident_update = await cachet_api.updateIncidentUpdate(0, 0, {
+	message: "My Updated Message",
+	status: 4
+})
+// incident_update = <a href="global.html#IncidentUpdate">IncidentUpdate</a></code></pre>
+
+  <p class="code-caption">
+    Promise
+  </p>
+
+
+  <pre class="prettyprint"><code>cachet_api.updateIncidentUpdate(0, 0, {
+	message: "My Updated Message",
+	status: 4
+}).then((incident_update) => {
+	// incident_update = <a href="global.html#IncidentUpdate">IncidentUpdate</a>
+}).catch((error) => { })</code></pre>
+
+
+  </div>
+
+
+
+<h5>Returns:</h5>
+
+        
+  <div class="param-desc">
+    <p>Returns a component</p>
+  </div>
+
+
+
+  <dl class="param-type">
+    <dt>Type: </dt>
+    <dd>
+      
+    <span class="param-type">
+      Promise.&lt;<a href="global.html#IncidentUpdate">IncidentUpdate</a>>
+    </span>
+
+    
+
+
+    </dd>
+  </dl>
+
+
+    
+
+      
+    
+
+    
+
+    
+  </article>
+</section>
+
+
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+  
+</body>
+</html>
