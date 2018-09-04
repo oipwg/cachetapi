@@ -1,6 +1,6 @@
 {
   "name": "@ostlerdev/cachetapi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An easy to use NPM Module to interact with Cachet",
   "main": "lib/index.js",
   "scripts": {
@@ -37,5 +37,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
