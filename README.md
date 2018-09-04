@@ -8,3 +8,4 @@ npm install --save cachetapi
 ```
 
 ## Docs
+Read the full API documentation here: https://oipwg.github.io/cachetapi/CachetAPI.html
