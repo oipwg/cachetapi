@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-class CachetAPI {
+export default class CachetAPI {
 	/**
 	 * Create a new CachetAPI
 	 * @param  {Object} options - Options about the CachetAPI Instance
@@ -1118,5 +1118,3 @@ class CachetAPI {
 		return new Error("Unable to " + type + " " + url + ": " + extraErrorText)
 	}
 }
-
-module.exports = CachetAPI

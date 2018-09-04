@@ -1,4 +1,4 @@
-import CachetAPI from '../src/CachetAPI'
+import CachetAPI from '../src/index'
 
 let cachet_api = new CachetAPI({
 	url: "https://demo.cachethq.io/api",
@@ -9,7 +9,7 @@ describe("General", () => {
 	test("Ping", async () => {
 		let res = await cachet_api.ping()
 
-		expect(res.data).toBe("Pong!")
+		expect(res).toBe("Pong!")
 	})
 	test("Version", async () => {
 		let version = await cachet_api.getVersion(true)
